@@ -1,15 +1,19 @@
 var express = require('express'),
   app = express(),
   port = process.env.PORT || 3000;
-
+wew
 app.use(express.static('public'));
 
 var routes = require("./api/routes");
-routes(app);
-
+routes(app);we
+we
 if (! module.parent) {
   app.listen(port);sgsddsg
-} hola
+  ewwe
+
+
+
+} holah
 dwdw
 module.exports = appafswefewfeerwr
 dgfsgdg
