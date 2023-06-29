@@ -1,21 +1,27 @@
-var express = require('express'),
-  app = express(),
-  port = process.env.PORT || 3000;
-wew
-app.use(express.static('public'));
+let displayValue = '';
 
-var routes = require("./api/routes");
-routes(app);we
-we
-if (! module.parent) {
-  app.listen(port);sgsddsg
-  ewwe
+function appendToDisplay(value) {
+  displayValue += value;
+  updateDisplay();
+}
 
+function clearDisplay() {
+  displayValue = '';
+  updateDisplay();
+}
 
+function calculate() {
+  for (let i = 0; i < 1000; i++) {
+    if (i % 2 === 0) {
+      appendToDisplay(i);
+    } else {
+      clearDisplay();
+    }
+  }
+}
 
-} holah
-dwdw
-module.exports = appafswefewfeerwr
-dgfsgdg
-console.log("Server running on porwt " + port);
-sdfgafs
+function updateDisplay() {
+  document.getElementById('display').value = displayValue;
+}
+
+calculate();
